@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Add New Recipe - Urbee</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background-color: #fff;
+      color: #222;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      width: 900px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border: 1px solid #ddd;
+    }
+
+    .form-section {
+      flex: 1;
+      padding: 40px;
+    }
+
+    .image-section {
+      flex: 1;
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      background-image: url('bg.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .image-section h2 {
+      background: rgba(0,0,0,0.6);
+      padding: 20px;
+      border-radius: 4px;
+    }
+
+    h1 {
+      margin-top: 0;
+      font-weight: 500;
+      font-size: 26px;
+      margin-bottom: 30px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 500;
+    }
+
+    input[type="text"],
+    textarea,
+    input[type="file"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+      background-color: #f9f9f9;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+
+    button {
+      background-color: #000;
+      color: #fff;
+      border: none;
+      padding: 12px 20px;
+      font-size: 15px;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #333;
+    }
+
+    @media (max-width: 800px) {
+      .container {
+        flex-direction: column;
+        width: 90%;
+      }
+
+      .image-section {
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="form-section">
+      <h1>Add New Recipe</h1>
+      <form>
+        <label for="recipeImage">Recipe Image</label>
+        <input type="file" id="recipeImage" name="recipeImage" accept="image/*" />
+
+        <label for="recipeName">Recipe Name</label>
+        <input type="text" id="recipeName" name="recipeName" placeholder="Enter recipe name" />
+
+        <label for="description">Description</label>
+        <textarea id="description" name="description" placeholder="Brief description"></textarea>
+
+        <label for="ingredients">Ingredients</label>
+        <textarea id="ingredients" name="ingredients" placeholder="List ingredients"></textarea>
+
+        <label for="steps">Preparation Steps</label>
+        <textarea id="steps" name="steps" placeholder="Describe preparation steps"></textarea>
+
+        <button type="submit">Submit Recipe</button>
+      </form>
+    </div>
+    <div class="image-section">
+      <h2>Share Your Delicious Creations</h2>
+    </div>
+  </div>
+</body>
+</html>
