@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recipe Haven - All Recipes</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #b3bcc5;
+    }
+
+    .split-page {
+      display: flex;
+      flex-wrap: wrap;
+      min-height: 100vh;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .left-section {
+      flex: 1;
+      padding: 40px 60px;
+      background-color: #dfd9d9;
+    }
+
+    .right-section {
+      flex: 1;
+      min-height: 300px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .overlay-text {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 6px;
+      font-size: 1.2rem;
+    }
+
+    ul { padding-left: 1.5rem; }
+    li { margin-bottom: 10px; }
+    .step { margin-bottom: 16px; }
+
+    @media (max-width: 768px) {
+      .split-page {
+        flex-direction: column;
+      }
+      .left-section {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Recipe 1 -->
+  <div class="split-page" id="recipe1">
+    <div class="left-section">
+      <h2>Chicken & Roasted Red Pepper Roll-Ups</h2>
+      <h4>Ingredients</h4>
+      <ul>
+        <li>2 boneless chicken breasts</li>
+        <li>1/2 cup roasted red peppers, sliced</li>
+        <li>1/2 cup mozzarella cheese, shredded</li>
+        <li>1 tbsp olive oil</li>
+        <li>Salt and pepper to taste</li>
+        <li>Fresh basil leaves (optional)</li>
+      </ul>
+      <h4>Steps</h4>
+      <div class="step"><strong>1:</strong> Preheat oven to 190°C.</div>
+      <div class="step"><strong>2:</strong> Flatten chicken, layer peppers and cheese, roll up.</div>
+      <div class="step"><strong>3:</strong> Sear, bake for 20-25 min.</div>
+    </div>
+    <div class="right-section" style="background-image: url('https://www.bhg.com/thmb/nOFU28V7pfKlZwE9L8gCYSPYJR4=/1244x0/filters:no_upscale():strip_icc()/chicken-red-pepper-rollups-RU217557-1fe22a234f144285bd2718a1a41acde2.jpg');">
+      <div class="overlay-text">Chicken Roll-Ups</div>
+    </div>
+  </div>
+
+  <!-- Recipe 2 -->
+  <div class="split-page" id="recipe2">
+    <div class="left-section">
+      <h2>Risotto with Onions, Bacon & Mushrooms</h2>
+      <h4>Ingredients</h4>
+      <ul>
+        <li>1 cup arborio rice</li>
+        <li>4 cups chicken broth</li>
+        <li>1/2 cup white wine</li>
+        <li>4 strips bacon</li>
+        <li>1 cup mushrooms, sliced</li>
+        <li>1/2 onion, sliced</li>
+        <li>Parmesan & butter</li>
+      </ul>
+      <h4>Steps</h4>
+      <div class="step"><strong>1:</strong> Cook bacon, sauté mushrooms & onions.</div>
+      <div class="step"><strong>2:</strong> Stir in rice, wine, then broth gradually.</div>
+      <div class="step"><strong>3:</strong> Add cheese and bacon.</div>
+    </div>
+    <div class="right-section" style="background-image: url('https://www.bhg.com/thmb/NW6q551wC7C0GRhfofCPN9UUuPQ=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/BHG-creamy-tuscan-chicken-7376011-hero-01-45025-08f309d48e5c4b65a241c7545e1983cf.jpg');">
+      <div class="overlay-text">Creamy Risotto</div>
+    </div>
+  </div>
+
+  <!-- Recipe 3 -->
+  <div class="split-page" id="recipe3">
+    <div class="left-section">
+      <h2>Steamed Crab Legs</h2>
+      <h4>Ingredients</h4>
+      <ul>
+        <li>1 lb crab legs</li>
+        <li>1 tbsp Old Bay seasoning</li>
+        <li>2 tbsp butter, melted</li>
+        <li>1 lemon, sliced</li>
+      </ul>
+      <h4>Steps</h4>
+      <div class="step"><strong>1:</strong> Steam crab legs with seasoning and lemon.</div>
+      <div class="step"><strong>2:</strong> Serve hot with butter dip.</div>
+    </div>
+    <div class="right-section" style="background-image: url('https://www.bhg.com/thmb/A9t_joRPqA5mS63DuaL4dMA38OM=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/steamed-crab-legs-RU314122-4f003b1258f3499d81681be426953611.jpg');">
+      <div class="overlay-text">Steamed Crab Legs</div>
+    </div>
+  </div>
+
+  <!-- Recipe 4 -->
+  <div class="split-page" id="recipe4">
+    <div class="left-section">
+      <h2>Grilled Pizza</h2>
+      <h4>Ingredients</h4>
+      <ul>
+        <li>Pizza dough</li>
+        <li>Tomato sauce</li>
+        <li>Mozzarella</li>
+        <li>Toppings of choice</li>
+      </ul>
+      <h4>Steps</h4>
+      <div class="step"><strong>1:</strong> Roll out dough, grill one side.</div>
+      <div class="step"><strong>2:</strong> Flip, add toppings, grill until cheese melts.</div>
+    </div>
+    <div class="right-section" style="background-image: url('https://img.freepik.com/premium-photo/indulge-slice-hot-italian-pizza-oozing-with-cheese-vertical-mobile-wallpaper_892776-14114.jpg?w=360');">
+      <div class="overlay-text">Grilled Pizza</div>
+    </div>
+  </div>
+
+  <!-- Recipe 5 -->
+  <div class="split-page" id="recipe5">
+    <div class="left-section">
+      <h2>Spicy Pesto Chicken & Pasta</h2>
+      <h4>Ingredients</h4>
+      <ul>
+        <li>200g pasta</li>
+        <li>1 chicken breast, sliced</li>
+        <li>2 tbsp pesto</li>
+        <li>1/2 tsp chili flakes</li>
+        <li>Grated parmesan</li>
+      </ul>
+      <h4>Steps</h4>
+      <div class="step"><strong>1:</strong> Cook pasta. Sauté chicken with chili.</div>
+      <div class="step"><strong>2:</strong> Mix with pesto, combine all, sprinkle cheese.</div>
+    </div>
+    <div class="right-section" style="background-image: url('https://img.freepik.com/free-photo/top-view-delicious-pasta-with-tomatoes_23-2149178178.jpg?...');">
+      <div class="overlay-text">Pesto Chicken Pasta</div>
+    </div>
+  </div>
+
+</body>
+</html>
